@@ -10,8 +10,16 @@ section{
   @apply flex justify-center items-center
 }
 
-.verification__pages{
+.enableOTP__page{
   @apply flex justify-center items-center
+}
+
+.verifyOTP__page{
+  @apply flex justify-center items-center bg-blue-700
+}
+
+.otp__input{
+  @apply border border-black border-opacity-30 m-2 p-2 w-10 h-14 text-center text-2xl font-bold outline-orange-700
 }
 
 .steps__indicator{
