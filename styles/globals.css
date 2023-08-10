@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section{
+  @apply min-h-screen w-[100%]
+}
+
+.auth__pages{
+  @apply flex justify-center items-center
+}
+
+.verification__pages{
+  @apply flex justify-center items-center
+}
+
+.steps__indicator{
+  @apply flex items-center justify-center flex-shrink-0 w-10 h-10 bg-blue-700 text-white rounded-full shadow-lg
+}
+
+.steps__line{
+  @apply h-full border border-blue-700 border-opacity-80 w-0
+}
+
+.mainForm{
+  @apply w-72 p-2
+}
+.mainForm__group{
+  @apply flex flex-col w-full m-2
+}
+
+.mainForm__group label{
+  @apply w-full text-sm my-1
+}
+
+.mainForm__group input{
+  @apply border border-black border-opacity-30 rounded-sm w-full p-1
+}
+
+.mainForm__btn{
+  @apply bg-blue-700 m-2 w-full p-2 text-white
+}
