@@ -7,7 +7,7 @@ export const AuthOptions = {
       id: 'login',
       name: 'credentials',
       authorize: async(credentials) => {
-        const baseURL = `${process.env.NEXT_PUBLIC_URL}/api/v1/auth/login`
+        const baseURL = `${process.env.NEXT_PUBLIC_API_URL}/api/v1/auth/login`
         const payload = {
           email: credentials.email,
           password: credentials.password
@@ -38,7 +38,7 @@ export const AuthOptions = {
       id: 'register',
       name: 'credentials',
       authorize: async(credentials) => {
-        const baseURL = `${process.env.NEXT_PUBLIC_URL}/api/v1/users`
+        const baseURL = `${process.env.NEXT_PUBLIC_API_URL}/api/v1/users`
         const payload = {
           firstname: credentials.firstname,
           lastname: credentials.lastname,
@@ -71,7 +71,7 @@ export const AuthOptions = {
       id: 'verify_otp',
       name: 'credentials',
       authorize: async(credentials) => {
-        const baseURL = `${process.env.NEXT_PUBLIC_URL}/api/v1/auth/verify_otp/${credentials.id}`
+        const baseURL = `${process.env.NEXT_PUBLIC_API_URL}/api/v1/auth/verify_otp/${credentials.id}`
         const payload = {
           otp: credentials.otp
         }
